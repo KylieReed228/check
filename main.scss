@@ -1,0 +1,141 @@
+@import "reset.scss";
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f4f3;
+    font-size: 14px;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 426px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    @media screen and (max-width: 450px) {
+        
+    }
+}
+
+
+.check {
+    max-width: 382px;
+    height: 520px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: (0 0px 6px rgba(#000000, .06));
+    &__shadow {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -10px;
+        height: 10px;
+        margin: 0 auto;
+        box-shadow: 0 1px 8px -2px rgba(0, 0, 0, 0.5);
+        width: 100%;
+    }
+    &__wrapper {
+        padding: 36px 40px 0 40px;
+    }
+    &__status {
+        width: 56px;
+        height: 56px;
+        margin: 0 auto;
+        background: #76bc11;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        & img {
+            width: 26px;
+        }
+    }
+    &__title {
+        width: 111px;
+        font-weight: 500;
+        font-size: 26px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    &__amount {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 20px;
+        max-width: 302px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background: #f4f4f3;
+        font-weight: 500;
+        & span {
+            font-weight: 400;
+        }
+    }
+    &__credit-card {
+        margin-bottom: 20px;
+        & p {
+            margin-bottom: 10px;
+        }
+        & span {
+            opacity: 0.56;
+        }
+    }
+    &__date {
+        margin-bottom: 30px;
+        & p {
+            margin-bottom: 10px;
+        }
+        & time {
+            opacity: 0.56;
+        }
+    }
+    &__line {
+        width: 100%;
+        border-bottom: 1px solid #e7e7e7;
+        margin-bottom: 10px;
+        position: relative;
+        &::after {
+            content: '';
+            width: 15px;
+            height:15px;
+            position:absolute;
+            left: 50px;
+            bottom: 0;
+            top: -1px;
+            transform:rotate(45deg) translateX(-50%);
+            border-bottom: 1px solid #e7e7e7;
+            border-right: 1px solid #e7e7e7;
+            background-color:#fff;
+        }
+    }
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        max-width: 302px;
+    }
+    &__logo {
+        display: flex;
+        & img {
+            margin-right: 10px;
+        }
+        & span {
+            width: 75px;
+            line-height: 13px;
+        }
+    }
+    &__btn {
+        width: 120px;
+        height: 40px;
+        background: transparent;
+        border: 1px solid #e7e7e7;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    &__wave {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 0px;
+    }
+}

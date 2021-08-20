@@ -1,0 +1,243 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f4f4f3;
+  font-size: 14px;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 426px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+.check {
+  max-width: 382px;
+  height: 520px;
+  margin: 0 auto;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0px 6px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0px 6px rgba(0, 0, 0, 0.06);
+}
+
+.check__shadow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  height: 10px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 1px 8px -2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1px 8px -2px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.check__wrapper {
+  padding: 36px 40px 0 40px;
+}
+
+.check__status {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+  background: #76bc11;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+}
+
+.check__status img {
+  width: 26px;
+}
+
+.check__title {
+  width: 111px;
+  font-weight: 500;
+  font-size: 26px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.check__amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px 20px;
+  max-width: 302px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background: #f4f4f3;
+  font-weight: 500;
+}
+
+.check__amount span {
+  font-weight: 400;
+}
+
+.check__credit-card {
+  margin-bottom: 20px;
+}
+
+.check__credit-card p {
+  margin-bottom: 10px;
+}
+
+.check__credit-card span {
+  opacity: 0.56;
+}
+
+.check__date {
+  margin-bottom: 30px;
+}
+
+.check__date p {
+  margin-bottom: 10px;
+}
+
+.check__date time {
+  opacity: 0.56;
+}
+
+.check__line {
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.check__line::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+  top: -1px;
+  -webkit-transform: rotate(45deg) translateX(-50%);
+          transform: rotate(45deg) translateX(-50%);
+  border-bottom: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
+  background-color: #fff;
+}
+
+.check__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 302px;
+}
+
+.check__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.check__logo img {
+  margin-right: 10px;
+}
+
+.check__logo span {
+  width: 75px;
+  line-height: 13px;
+}
+
+.check__btn {
+  width: 120px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.check__wave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0px;
+}
+/*# sourceMappingURL=main.css.map */
